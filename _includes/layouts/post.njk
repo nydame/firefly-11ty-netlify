@@ -11,6 +11,10 @@ section: post
     </small>
   </p>
 
+  {% if kitten.url%}
+    <img src="{{kitten.url}}" alt="A random picture of a cat. You're welcome!" width="300" />
+  {% endif %}
+
   {{ layoutContent | safe }}
 
   {% if tags %}
