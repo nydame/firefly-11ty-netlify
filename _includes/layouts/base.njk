@@ -5,10 +5,15 @@
 
 	<body>
 
-		<header>
-			<em>
+		<header {% if heroUrl %}style="background: url({{heroUrl}});"{% endif %}>
+			<section class="site-title">
 				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
+			</section>
+			
+			{% if section === "home" %}
+			{% include "components/siteintro.njk" %}
+			{% endif %}
+
 			{% include "components/nav.njk" %}
 		</header>
 
