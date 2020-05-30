@@ -1,16 +1,13 @@
 ---
 layout: layouts/home.njk
-title: Home
 date: 2020-05-14T00:00:00.000Z
 permalink: /
 eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome, fellow traveler
+# Welcome!
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+We're all living more of our lives online now, and for the forseeable future. Many people who were musing wistfully &mdash; before Covid-19 &mdash; about maybe enhancing their web presence "someday" now realize that day has come. If that sounds like you, Firefly Web Services can help get those dreams off the ground and into orbit! 🚀
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
-
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
+{{metadata.description}} We love helping local businesses and organizations. [Let us know how](/contact)
