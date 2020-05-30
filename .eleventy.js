@@ -31,6 +31,9 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
+  // Utility: return current year
+  eleventyConfig.addShortcode("currentYear", () => DateTime.local().toFormat("yyyy"));
+
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
